@@ -107,28 +107,20 @@ Both Test and Application Output Files (port_protocol_counts.txt, tag_counts.txt
 
 2. **Build the Project:**
 
-    If using Gradle:
+    We are using Gradle for building the project:
 
     ```bash
     ./gradlew build
     ```
-
-    If using Maven:
-
-    ```bash
-    mvn clean install
-    ```
+	
+	If ./gradlew is not found or executable, you might need to run chmod +x gradlew to make it executable.
+	
+	Ensure that your Java environment is correctly set up and that Gradle is installed or you're using the Gradle Wrapper (gradlew).
 
 3. **Run the Application:**
 
     ```bash
     ./gradlew run
-    ```
-
-    or
-
-    ```bash
-    mvn exec:java -Dexec.mainClass="com.illumio.FlowlogexerciseApplication"
     ```
 
 4. **View the Output:**
@@ -141,8 +133,7 @@ Both Test and Application Output Files (port_protocol_counts.txt, tag_counts.txt
     ./gradlew test
     ```
 
-    or
+    This command will execute all the tests in the src/test/java/ directory.
+    
+    Test Output Location: The test results, including pass/fail status and error messages, are stored in the build/reports/tests/test/ directory. The index.html file provides a summary and detailed report of the test execution.
 
-    ```bash
-    mvn test
-    ```
