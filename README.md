@@ -26,7 +26,7 @@ Author: Amish Raj
 
 ## Directory Structure
 
-src/ contains the program files, intuitively organized into the main and test directories. FlowlogexerciseApplication.java is the driver class and is the starting point of the application.
+src/ contains the program files, intuitively organized into the main and test directories. `FlowlogexerciseApplication.java` is the driver class and is the starting point of the application.
 
 The model class contains the flow log entry and lookup entry classes.
 
@@ -34,9 +34,9 @@ The service and util classes are self explanatory helper classes that perform th
 
 The src/test/java directory includes the implemented Unit Tests for each of the model, service, and util classes.
 
-The src/main/Resources directory contains the input flow_logs.txt and lookup.csv files which the application parses.
+The src/main/Resources directory contains the input `flow_logs.txt` and `lookup.csv` files which the application parses.
 
-Both Test and Application Output Files (port_protocol_counts.txt, tag_counts.txt, test_port_protocol_counts.txt, test_tag_counts.txt) are stored in the ./output/ directory.
+Both Test and Application Output Files (`port_protocol_counts.txt`, `tag_counts.txt`, `test_port_protocol_counts.txt`, `test_tag_counts.txt`) are stored in the ./output/ directory.
 
 ```bash
 .
@@ -125,15 +125,17 @@ Both Test and Application Output Files (port_protocol_counts.txt, tag_counts.txt
 
 	Delete the contents of the `./output/` directory prior to executing, and make sure `src/main/resources` contains the correct input files `flow_logs.txt` and `lookup.csv`.
 
+	The following command runs the application, specifically the FlowlogexerciseApplication.java as described in the project directory structure.
+
     ```bash
     ./gradlew run
     ```
 	
-4. **View the Output:**
+5. **View the Output:**
 
    	You will find the output files `port_protocol_counts.txt` and `tag_counts` in the `./output/` folder.
 
-5. **Run the Unit Tests:**
+6. **Run the Unit Tests:**
 
     ```bash
     ./gradlew test
