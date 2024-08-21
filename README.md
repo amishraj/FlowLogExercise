@@ -92,17 +92,16 @@ Both Test and Application Output Files (port_protocol_counts.txt, tag_counts.txt
 
 ### Prerequisites
 
-- Java 17 or higher
-- Gradle
-- IntelliJ or Spring Tool Suite IDE is recommended
+- Java 17 or higher (cannot run application without java)
+- Gradle (should be taken care of if you install java 17 or above)
 
 ### Build and Run
 
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-username/your-project.git
-    cd your-project
+    git clone https://github.com/amishraj/FlowLogExercise.git
+    cd FlowLogExercise
     ```
 
 2. **Build the Project:**
@@ -112,28 +111,34 @@ Both Test and Application Output Files (port_protocol_counts.txt, tag_counts.txt
     ```bash
     ./gradlew build
     ```
+    
+    Note:
+    
+    The first time you build, it might take a couple of minutes.
 	
-	If ./gradlew is not found or executable, you might need to run chmod +x gradlew to make it executable.
+	If `./gradlew` is not found or executable, you might need to run chmod +x gradlew to make it executable.
 	
 	Ensure that your Java environment is correctly set up and that Gradle is installed or you're using the Gradle Wrapper (gradlew).
 
 3. **Run the Application:**
 
+	Delete the contents of the `./output/` directory prior to executing, and make sure `src/main/resources` contains the correct input files `flow_logs.txt` and `lookup.csv`.
+
     ```bash
     ./gradlew run
     ```
-
+	
 4. **View the Output:**
 
-   The application output will be stored in the `output/` directory.
+   	You will find the output files `port_protocol_counts.txt` and `tag_counts` in the `./output/` folder.
 
-5. **Run the Tests:**
+5. **Run the Unit Tests:**
 
     ```bash
     ./gradlew test
     ```
-
+    
     This command will execute all the tests in the src/test/java/ directory.
     
-    Test Output Location: The test results, including pass/fail status and error messages, are stored in the build/reports/tests/test/ directory. The index.html file provides a summary and detailed report of the test execution.
+    Test Output Location: The test results, including pass/fail status and error messages, are stored in the `build/reports/tests/test/` directory. The index.html file provides a summary and detailed report of the test execution.
 
