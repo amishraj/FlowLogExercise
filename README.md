@@ -1,8 +1,11 @@
-# Flow Log Tagging Application
+# Flow Log Parser Exercise
 
 ## Overview
 
-This Java application parses a file containing flow log data and maps each row to a tag based on a lookup table. The lookup table is defined as a CSV file, and it has 3 columns: `dstport`, `protocol`, and `tag`. The combination of `dstport` and `protocol` determines the tag that can be applied.
+This Java application parses a file containing flow log data and maps each row to a tag based on a lookup table. The lookup table is defined as a CSV file, and it has 3 columns: `dstport`, `protocol`, and `tag`. The combination of `dstport` and `protocol` determines the tag that can be applied. 
+
+This exercise was done as part of Ilumio's technical assessment.
+Author: Amish Raj
 
 ## Features
 
