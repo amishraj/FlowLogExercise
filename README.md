@@ -85,7 +85,6 @@ Both Test and Application Output Files (port_protocol_counts.txt, tag_counts.txt
 ├── settings.gradle
 ├── gradlew
 ├── gradlew.bat
-├── HELP.md
 └── README.md
 ```
 
