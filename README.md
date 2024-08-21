@@ -92,8 +92,9 @@ Both Test and Application Output Files (port_protocol_counts.txt, tag_counts.txt
 
 ### Prerequisites
 
-- Java 17 or higher (cannot run application without java)
-- Gradle (should be taken care of if you install java 17 or above)
+- Java 17 or higher (CANNOT run application without a valid Java Runtime), I used this JDK17 version- https://www.oracle.com/java/technologies/downloads/#jdk17-mac
+- Alternatively, an online sandbox environment such as Code Sandbox (https://codesandbox.io/) can be used to import the repo and run the application in the terminal
+- Gradle (should be taken care of if you install JDK 17 or above)
 
 ### Build and Run
 
